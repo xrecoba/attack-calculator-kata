@@ -13,16 +13,12 @@ namespace Game.tests
 
         [Fact]
         public void AttackerDoesNotDamageDefender()
-        {          
-            Assert.Equal(0, 0);
+        {
+            var attacker = new Character(0, 0, "", 1);
+            var defender = new Character(22, 0, "", 0);
+            var sut = new AttackCalculator();
+            var result = sut.CalculateDamage(attacker, defender);
+            Assert.Equal(0, result);
         }
-
-       [Fact]
-        public void ThisTestShouldFail()
-        {          
-            Assert.Equal(0, 42);
-        }
-
-
     }
 }
