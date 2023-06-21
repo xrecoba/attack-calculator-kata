@@ -9,7 +9,7 @@ namespace Game
         public int CalculateDamage(Character atk, Character def)
         {
             var defaultAttack = atk.Force;            
-            int dice = random.Next(1, 20);
+            int dice = RandomDice();
             var currentAttack = defaultAttack + dice;
             var damage = atk.damageDealt;
             
@@ -32,6 +32,11 @@ namespace Game
             {
                 return 0;
             }
+        }
+
+        protected virtual int RandomDice()
+        {
+            return random.Next(1, 20);
         }
     }
 }
