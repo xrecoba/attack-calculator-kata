@@ -7,8 +7,12 @@ namespace Game.tests
 {
     public class AttackCalculatorTests 
     {
+        // 1. Attacker doesn't damage defender
+        // 2. Attacker damages defender
+        // 3. Attacker misses
+
         [Fact]
-        public void ThisTestShouldPass()
+        public void AttackerDoesNotDamageDefender()
         {          
             Assert.Equal(0, 0);
         }
@@ -18,5 +22,7 @@ namespace Game.tests
         {          
             Assert.Equal(0, 42);
         }
+
+
     }
 }
