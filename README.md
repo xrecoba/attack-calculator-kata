@@ -6,7 +6,7 @@ The kata topic is inspired in Dungeons and Dragons role game. In that game, when
 ## Setup
 
 ### C#
-You should download this repo and open *csharp/Game/Game.sln*  with your favorite c# editor (for example, you can use Visual Studio Community which is free in most cases).
+You should download this repo and open *csharp/game.slnx*  with your favorite c# editor (for example, you can use Visual Studio Community which is free in most cases).
 
 Once you have opened the solution, you should be able to compile it and then run the tests in Game.tests project. One test should pass and the other should fail.
 
